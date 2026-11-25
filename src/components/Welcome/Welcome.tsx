@@ -1,7 +1,10 @@
-import { Anchor, Text, Title } from '@mantine/core';
+import { Anchor, Button, Text, Title } from '@mantine/core';
 import classes from './Welcome.module.css';
+import { useState } from 'react';
 
 export function Welcome() {
+
+  const [count, setCount] = useState(0);
   return (
     <>
       <Title className={classes.title} ta="center" mt={100}>
@@ -10,7 +13,8 @@ export function Welcome() {
           Mantine
         </Text>
       </Title>
-      <Text c="dimmed" ta="center" size="lg" maw={580} mx="auto" mt="xl">
+    
+      <Text ta="center" size="lg" maw={580} mx="auto" mt="xl">
         This starter Vite project includes a minimal setup, if you want to learn more on Mantine +
         Vite integration follow{' '}
         <Anchor href="https://mantine.dev/guides/vite/" size="lg">
