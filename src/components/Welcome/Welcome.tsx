@@ -106,7 +106,10 @@ export function Welcome() {
           mt="xl"
         />
         <Text ta="center" fw={700} mt="md">
-          Nächste Party: 26.12.2026
+          Nächste Party: 26.12.2026, 13 bis 23 Uhr
+        </Text>
+        <Text ta="center" mt="xs">
+          Bitte seid pünktlich zum Start vor Ort, damit ihr die Einleitung nicht verpasst.
         </Text>
 
         <SimpleGrid id="infos" cols={{ base: 1, sm: 2 }} verticalSpacing="xl" mt={80}>
