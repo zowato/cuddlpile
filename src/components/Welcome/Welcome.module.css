@@ -1,10 +1,17 @@
 .title {
-  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
-  font-size: rem(100px);
+  color: #b4aeec;
+  /* Title is about 15.4x its font size wide: these values keep it on one row in the 960px Container and on phones. */
+  font-size: min(rem(58px), 5.6vw);
   font-weight: 900;
   letter-spacing: rem(-2px);
+}
 
-  @media (max-width: $mantine-breakpoint-md) {
-    font-size: rem(50px);
-  }
+.card {
+  background-color: #a99fb2;
+  color: #2b2a38;
+  border: rem(3px) solid #1b1a24;
+}
+
+.footer {
+  background-color: #3c2dc2;
 }
